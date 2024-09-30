@@ -1,0 +1,135 @@
+:root {
+    --primary-color: #76DEFD;
+    --secondary-color: #FFFFFF;
+    --black: #000000;
+}
+
+/* Container for About Us section */
+.about-container {
+    display: flex;
+    flex-direction: row-reverse; /* Place the image on the right */
+    justify-content: space-between;
+    align-items: center;
+    padding: 90px;
+    background-color: var(--secondary-color); /* Background color */
+    height: auto; /* Adjust based on content */
+}
+
+/* Left side content styling */
+.about-content {
+    max-width: 500px;
+    margin-right: 40px; /* Adjust margin between content and image */
+}
+
+/* Section Heading */
+.about-content h2 {
+    font-size: 40px;
+    color: var(--black); /* Use primary color */
+    margin-bottom: 20px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+/* Paragraph text */
+.about-content p {
+    font-size: 23px;
+    color: var(--black); /* Black color for readability */
+    line-height: 1.6;
+    margin-bottom: 30px;
+    text-align: justify;
+}
+
+/* Button styling */
+.about-content button {
+    padding: 15px 30px;
+    background-color: var(--black); /* Use primary color */
+    color: #fff; /* White text */
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Button hover effect */
+.about-content button:hover {
+    background-color: var(--primary-color); /* Darker green on hover */
+}
+
+/* Right side image styling */
+.about-image img {
+    width: 95%;
+    max-width: 600px; /* Maximum width */
+    height: auto; /* Responsive height */
+    margin-left: 40px; /* Adjust margin between image and content */
+}
+
+/* Media Queries for responsiveness */
+
+/* Tablet screens (768px - 1024px) */
+@media (max-width: 1024px) {
+    .about-container {
+        flex-direction: column; /* Stack the image and content vertically */
+        padding: 20px;
+    }
+
+    .about-image img {
+        max-width: 450px;
+        margin-bottom: 30px; /* Add space between image and content */
+        margin-left: 60px;
+        
+    }
+
+    .about-content {
+        margin-right: 0;
+        text-align: center;
+    }
+
+    .about-content h2 {
+        font-size: 36px;
+    }
+
+    .about-content p {
+        font-size: 22px;
+    }
+}
+
+/* Mobile screens (max-width: 768px) */
+@media (max-width: 768px) {
+    .about-container {
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    .about-image img {
+        max-width: 100%; /* Full width on mobile */
+    }
+
+    .about-content h2 {
+        font-size: 32px;
+    }
+
+    .about-content p {
+        font-size: 20px;
+    }
+}
+
+/* Very small screens (max-width: 480px) */
+@media (max-width: 480px) {
+    .about-container {
+        padding: 10px;
+    }
+
+    .about-content h2 {
+        font-size: 28px;
+    }
+
+    .about-content p {
+        font-size: 14px;
+    }
+
+    .about-content button {
+        font-size: 14px;
+        padding: 10px 20px;
+    }
+}

@@ -1,0 +1,147 @@
+:root {
+    --primary-color: #76DEFD;
+    --secondary-color: #FFFFFF;
+    --black: #000000;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 40px 20px;
+    background: #1c1c1c; /* Dark background */
+    color: #fff;
+    flex-wrap: wrap;
+}
+
+.footer__map {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.footer__map iframe {
+    width: 100%;
+    height: 300px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Add shadow for a 3D effect */
+}
+
+.footer__links {
+    flex: 1;
+    text-align: center;
+}
+
+.footer__links h4 {
+    margin-bottom: 40px;
+    font-size: 1.5rem;
+}
+
+.footer__links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer__links li {
+    margin: 8px 0;
+    margin-bottom: 30px;
+}
+
+.footer__links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.3s;
+}
+
+.footer__links a:hover {
+    color: var(--primary-color);
+}
+
+.footer__social {
+    flex: 1;
+    text-align: right;
+}
+
+.footer__social h4 {
+    margin-bottom: 30px;
+    padding-right: 200px;
+    font-size: 1.5rem;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 165px;
+    gap: 25px;
+}
+
+.social-icons a {
+    color: #fff;
+    font-size: 2rem;
+    transition: transform 0.3s, color 0.3s;
+}
+
+.social-icons a:hover {
+    transform: scale(1.2);
+    color: var(--primary-color);
+}
+
+.footer-logo{
+    width: 400px;
+    padding-right: 180px;
+    margin-top: 40px;
+}
+
+/* Footer Bottom Section */
+/* Footer Bottom Section */
+.footer__bottom {
+    display: flex;
+    justify-content: center; /* Centers the content horizontally */
+    align-items: center;     /* Centers the content vertically */
+    gap: 1rem;              /* Space between the texts */
+    padding: 1rem 0;        /* Optional: Add some padding */
+    color: var(--text-light); /* Change to your desired text color */
+    font-size: 0.9rem;      /* Adjust the font size as needed */
+    background-color: var(--text-dark); /* Match the footer background */
+}
+
+.footer__bottom span{
+    color: #000000;
+}
+
+/* Media Query for smaller screens */
+@media (max-width: 768px) {
+    .footer__bottom {
+        flex-direction: column; /* Stack the texts vertically on smaller screens */
+        align-items: center;    /* Center items */
+        gap: 0.5rem;            /* Reduced space between texts */
+        font-size: 0.8rem;      /* Smaller font size for mobile */
+        padding: 10px;
+        text-align: justify;
+    }
+}
+
+
+
+
+@media (max-width: 768px) {
+    .footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer__map,
+    .footer__links,
+    .footer__social {
+        margin-bottom: 20px;
+        width: 100%;
+    }
+
+    .social-icons {
+        justify-content: center;
+        padding-left: 155px;
+        gap: 30px;
+    }
+}

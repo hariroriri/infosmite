@@ -1,0 +1,223 @@
+:root {
+    --primary-color: #76DEFD;
+    --secondary-color: #FFFFFF;
+    --black: #000000;
+}
+
+/* Container for the entire Home section */
+.home-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    height: 80vh;
+    background-color: var(--secondary-color);
+    animation: fadeIn 1s ease-in-out; /* Fade-in animation for the whole section */
+}
+
+/* Left side image styles */
+.home-image img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 8px;
+    margin-left: 80px;
+    animation: slideInLeft 1s ease-out; /* Slide-in animation for the image */
+}
+
+/* Right side content styles */
+.home-content {
+    max-width: 450px;
+    margin-right: 20%;
+    text-align: center;
+    animation: fadeInUp 1.5s ease-out; /* Fade-in animation with slight upward movement for the text */
+}
+
+/* Content heading */
+.home-content h1 {
+    font-size: 65px;
+    color: var(--black);
+    font-weight: bold;
+    margin-bottom: 15px;
+    line-height: 1.2;
+    width: 650px;
+    animation: fadeInUp 2s ease-out; /* Animation */
+}
+
+/* Content paragraph */
+.home-content p {
+    font-size: 25px;
+    color: #555;
+    margin-bottom: 20px;
+    line-height: 1.5;
+    width: 650px;
+    animation: fadeInUp 2s ease-out 0.5s; /* Animation with delay */
+}
+
+/* Button */
+.home-content button {
+    font-size: 16px;
+    padding: 20px 20px;
+    background-color: var(--black);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-left: 150px;
+    animation: fadeInUp 2.5s ease-out 1s; /* Animation with longer delay */
+}
+
+/* Button hover effect */
+.home-content button:hover {
+    background-color: #58C9F3;
+}
+
+/* Keyframes for animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-100px); /* Slide in from the left */
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0); /* Original position */
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px); /* Fade in with upward movement */
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0); /* Original position */
+    }
+}
+
+/* Tablet screens (768px - 1024px) */
+@media (max-width: 1024px) {
+    .home-container {
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 15px;
+        height: auto;
+    }
+
+    .home-image img {
+        max-width: 450px;
+        margin-left: 30px;
+    }
+
+    .home-content {
+        max-width: 400px;
+        margin-right: 0;
+        text-align: center;
+    }
+
+    .home-content h1 {
+        font-size: 50px;
+        width: 100%;
+    }
+
+    .home-content p {
+        font-size: 20px;
+    }
+
+    .home-content button {
+        margin-left: 0;
+        margin-bottom: 50px;
+    }
+}
+
+/* Laptop screens (1024px - 1366px) */
+@media (max-width: 1366px) {
+    .home-container {
+        padding: 20px 50px;
+        height: 70vh;
+    }
+
+    .home-image img {
+        max-width: 500px;
+        margin-left: 40px;
+    }
+
+    .home-content {
+        max-width: 400px;
+        margin-right: 5%;
+    }
+
+    .home-content h1 {
+        font-size: 55px;
+    }
+
+    .home-content p {
+        font-size: 22px;
+    }
+
+    .home-content button {
+        padding: 18px 20px;
+    }
+}
+
+/* Mobile screens (max-width: 768px) */
+@media (max-width: 768px) {
+    .home-container {
+        flex-direction: column;
+        padding: 10px;
+        height: auto;
+    }
+
+    .home-image img {
+        max-width: 100%;
+        margin-left: 0;
+        margin-bottom: 20px;
+    }
+
+    .home-content {
+        max-width: 100%;
+        margin-right: 0;
+        text-align: center;
+    }
+
+    .home-content h1,
+    .home-content p {
+        font-size: 30px;
+        width: 100%;
+    }
+
+    .home-content p {
+        font-size: 18px;
+    }
+
+    .home-content button {
+        margin-left: 0;
+        margin-top: 15px;
+    }
+}
+
+/* Very small screens (max-width: 480px) */
+@media (max-width: 480px) {
+    .home-content h1 {
+        font-size: 25px;
+    }
+
+    .home-content p {
+        font-size: 16px;
+    }
+
+    .home-content button {
+        padding: 15px;
+        font-size: 14px;
+    }
+}

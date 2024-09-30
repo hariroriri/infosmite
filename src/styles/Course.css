@@ -1,0 +1,157 @@
+/* Course.css */
+.course-banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 250px; /* Adjust height as needed */
+    background: linear-gradient(135deg, #6a11cb, #2575fc); /* Gradient background */
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px; /* Optional rounded corners */
+    margin-bottom: 20px; /* Space below banner */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  }
+  
+  .course-banner h1 {
+    font-size: 3rem; /* Adjust font size */
+    margin: 0;
+    padding: 0;
+  }
+  
+  .course-banner p {
+    margin-top: 10px;
+    font-size: 1.2rem; /* Adjust font size */
+    color: aliceblue;
+  }
+  
+
+
+/* Course.css */
+.pack-page {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .pack-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three cards per row */
+    gap: 30px; /* Reduced gap between cards */
+    justify-content: center; /* Center the grid */
+    max-width: 1200px; /* Constrain the overall grid width */
+    margin: 0 auto; /* Center the grid container */
+    margin-bottom: 40px;
+  }
+  
+  .pack-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    width: 350px; /* Increased card width */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.4s ease, box-shadow 0.4s ease, background-color 0.4s ease; /* Smooth transition */
+    position: relative; /* Needed for the overlay */
+  }
+  
+  .pack-card:hover {
+    transform: translateY(-10px) scale(1.03); /* Slight lift and zoom */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
+    background-color: #f8f8f8; /* Subtle background color change */
+  }
+
+.pack-image {
+  width: 100%;
+  height: 220px; /* Adjust the height for the image */
+  object-fit: cover;
+  transition: transform 0.4s ease; /* Smooth transition for image zoom */
+}
+
+.pack-card:hover .pack-image {
+    transform: scale(1.1); /* Zoom in on image */
+  }
+  
+  .pack-info {
+    padding: 15px;
+    transition: background-color 0.4s ease, color 0.4s ease; /* Smooth transition for content */
+  }
+
+  .pack-card:hover .pack-info {
+    background-color: #fafafa; /* Slightly lighter background on hover */
+  }
+  
+  .pack-info h2 {
+    margin: 0;
+    font-size: 1.5em;
+  }
+  
+  .pack-info p {
+    margin: 10px 0;
+  }
+  
+  .pack-price {
+    font-weight: bold;
+    color: #e74c3c;
+  }
+  
+  .book-now-btn {
+    background-color: #e74c3c;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.4s ease, transform 0.4s ease; /* Smooth transition */
+  }
+  
+  .book-now-btn:hover {
+    background-color: #c0392b;
+    transform: scale(1.05); /* Slightly enlarge button on hover */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 1024px) {
+    .pack-container {
+      grid-template-columns: repeat(1, 1fr); 
+      padding-left: 100px;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .pack-container {
+      grid-template-columns: 1fr; /* One card per row */
+    }
+  }
+  
+  .course-card-container {
+    width: 100%; /* Full width of the screen */
+    max-width: 1000px; /* Optional: constrain max width for larger screens */
+    margin: 0 auto; /* Center the container */
+    padding: 20px; /* Padding around the container */
+    background-color: #f9f9f9; /* Light background color */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    text-align: center; /* Center text */
+    margin-bottom: 40px;
+}
+
+.course-details {
+    display: flex; /* Flexbox for better layout */
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+    padding: 15px 20px; /* Padding for better spacing */
+    border: 1px solid #ddd; /* Border for separation */
+    border-radius: 8px; /* Rounded corners */
+    margin: 10px 0; /* Space between details */
+    background-color: #fff; /* White background for details */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.course-details span {
+    font-weight: bold; /* Make the text bold */
+    color: #333; /* Dark text color */
+    flex: 1; /* Allow items to grow and shrink */
+    text-align: center; /* Center text */
+}

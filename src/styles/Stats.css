@@ -1,0 +1,53 @@
+/* Statistics Section */
+.stats-section {
+    margin-top: 40px; /* Space above the section */
+    padding: 30px; /* Padding around the section */
+    background-color: #f8f9fa; /* Light background color for the container */
+    border-radius: 8px; /* Rounded corners for the container */
+    margin-bottom: 25px;
+  }
+  
+  .stat-icon {
+    width: 300px; /* Increased width for the icons */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 15px; /* Space below the image */
+    border-radius: 10px; /* Rounded corners for the images */
+  }
+  
+  .stats-section h3 {
+    font-size: 1.5rem; /* Font size for stats */
+    font-weight: 700; /* Bold text */
+    color: var(--black); /* Text color */
+  }
+  
+  /* Ensure that the items are displayed in a row */
+  @media (min-width: 768px) {
+    .stats-section {
+      display: flex; /* Use flexbox for row display */
+      justify-content: space-between; /* Distribute space evenly */
+    }
+  
+    .stats-section div {
+      flex: 1; /* Each column takes equal width */
+      text-align: center; /* Center align text */
+    }
+  }
+  
+  /* Responsive Styles for smaller screens */
+  @media (max-width: 767px) {
+    .stats-section {
+      flex-direction: column; /* Stack items vertically on smaller screens */
+      align-items: center; /* Center align items */
+      text-align: center; /* Center align text for mobile */
+    }
+  
+    .stat-icon {
+      width: 300px; /* Optionally adjust the image size for mobile */
+    }
+  
+    .stats-section h3 {
+      font-size: 1.2rem; /* Smaller font size for mobile */
+      margin-bottom: 1px;
+    }
+  }
+  

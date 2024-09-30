@@ -1,0 +1,57 @@
+/* TestimonialCarousel.css */
+.testimonial-carousel {
+    padding: 2rem 0;          
+    margin: 60px;
+}
+
+.testimonial-content {
+    display: flex;
+    align-items: center; /* Center the image and text vertically */
+    justify-content: center; /* Center content horizontally */
+    padding: 1.5rem;
+}
+
+.testimonial-image {
+    border-radius: 50%; /* Circular image */
+    width: 190px; /* Set image size */
+    height: 190px; /* Set image size */
+    margin-right: 1.5rem; /* Space between image and text */
+}
+
+.testimonial-text-content {
+    max-width: 600px; /* Limit width of text content */
+}
+
+.testimonial-text {
+    font-size: 1.2rem;
+    font-style: italic; /* Italic style for text */
+    margin-bottom: 1rem;
+    color: #343a40; /* Dark text color */
+}
+
+.testimonial-name {
+    font-weight: bold; /* Bold name */
+    margin: 0;
+}
+
+.testimonial-position {
+    color: #6c757d; /* Gray color for position */
+}
+
+/* Media Query for Mobile View */
+@media (max-width: 768px) {
+    .testimonial-content {
+        flex-direction: column; /* Change layout to column */
+        align-items: flex-start; /* Align items to the start */
+        text-align: center; /* Center text for better readability */
+    }
+
+    .testimonial-image {
+        margin-bottom: 1rem; /* Space below the image */
+        margin-right: 0; /* Remove right margin */
+    }
+
+    .testimonial-text-content {
+        max-width: 100%; /* Allow full width on mobile */
+    }
+}
